@@ -1,0 +1,12 @@
+{% extends 'index1.html' %}
+
+{% block ref %}
+        <form action="{{ url_for('auth') }}" method="post">
+            <input type="text" name="login" placeholder="Enter name">
+            <input type="password" name="pass" placeholder="Enter password">
+            <input type="submit" value="SEND">
+
+            
+        </form>
+        
+{% endblock %}

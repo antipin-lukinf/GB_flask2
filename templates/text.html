@@ -1,0 +1,15 @@
+<!--Создать страницу, на которой будет форма для ввода текста и кнопка "Отправить", -->
+<!--при нажатии на которую будет произведен подсчет -->
+<!--количества слов в тексте и переход на страницу с результатом.-->
+
+{% extends 'index1.html' %}
+
+{% block ref %}
+        <form action="{{ url_for('text') }}" method="post">
+            <input type="text" name="text" placeholder="Enter your text">
+            <input type="submit" value="SEND">
+
+
+        </form>
+
+{% endblock %}
